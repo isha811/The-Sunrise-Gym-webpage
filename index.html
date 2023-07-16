@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+    <style>
+        /*css reset*/
+        body
+        {
+            font-family: 'Ubuntu', sans-serif;
+
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background:url('gym2.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .left
+        { /*border: 2px solid red ;*/
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        
+        }
+        .left img
+        {
+            width: 70px;
+            filter: invert(100%);/*change color of img black to white or white to black*/
+            
+        }
+        .left div
+        {
+            text-align: center;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            line-height: 16px;
+        }
+        .mid
+        {
+            /*border: 2px solid green;*/
+            display:block ;
+            width: 50%;
+            margin: 20px auto;
+            
+            
+
+        }
+        .right
+        {position: absolute;
+            right: 34px;
+            top: 20px;
+            /*border: 2px solid brown ;*/
+            display: inline-block;
+            
+        }
+        .navbar
+        {
+            display: inline-block;
+
+        }
+        .navbar li
+        {
+            
+            display: inline-block;
+            font-size: 16px;
+        }
+        .navbar li a
+        {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a:hover
+        {
+            text-decoration: underline;
+            color: brown;
+        }
+        
+            
+        .btn
+        {
+            border: 2px solid orange;
+            padding: 3px 5px;
+            margin: 5px;
+            background: rgb(233, 146, 47);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .btn:hover
+        {
+            background-color: rgb(226, 184, 104);
+        }
+        .container
+        {
+            /*border: 2px solid white;*/
+            margin: 55px 62px;
+            padding: 55px 150px;
+            border-radius: 8px;
+            float: right;
+            color: black;
+        }
+        
+        .container button
+        {
+            display: block;
+        
+            margin: auto;
+            
+        }
+        .form-group input
+        {
+            text-align: center;
+            display: block;
+            width: 200px;
+            padding: 3px;
+            border: 2px solid orange;
+            margin:4px ;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: 'Ubuntu', sans-serif;
+
+
+        }
+       
+        
+    </style>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/first.css">
+<body>
+    <header class="header">
+        <!-- left div for logo-->
+        <div class="left">
+           <img src="logo2.png" alt="">
+           <div>
+            Sunrise Fitness
+           </div>
+
+        </div>
+        <!-- mid for navigation bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://" class="active">Home</a></li>
+                <li><a href="http://">About Us</a></li>
+                <li><a href="http://">Fitfness</a></li>
+                <li><a href="http://">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right for button s-->
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button><button class="btn">
+                Email Us
+            </button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1> JOIN NOW!!!</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="name" placeholder="Enter your name"> 
+
+            </div>
+        
+            <div class="form-group">
+                 <input type="name" placeholder="Enter your age">
+            </div>
+        
+            <div class="form-group">
+                 <input type="name" placeholder="Enter your email">
+            </div>
+        
+            <div class="form-group">
+                 <input type="name" placeholder="Enter your mobile number">
+            </div>
+            <button class="btn">submit</button>
+        
+        </form>
+
+    </div>s
+     
+</body>
+</html>
